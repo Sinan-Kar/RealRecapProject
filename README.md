@@ -4,10 +4,6 @@
 
 <h1 align="center">ReCap Project : Araba Kiralama Sistemi</h1> 
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/43720773/106998466-9d31b280-6795-11eb-8e5b-16e0b78a99bc.PNG" width="600" alt="Rent A Car">
-</p>
-
 ## ⭐ Introduction 
 - **Entities, DataAccess, Business ve Console katmanlarından oluşan araba kiralama console projesidir. Car, Brand, Color, Customer, User, CarImages ve Rental nesnelerinden ve onun operasyonlarından oluşan bu proje zamanla geliştirilecektir.**
 - **[Sql query](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql) dosyamı da ekledim isteyen varsa faydalanabilir.**
@@ -29,19 +25,6 @@
 - [Output](#output)
 - [Files](#files)
 - [License](#license)
-
-
-## Installation
-```bash
-# Clone to repository
-$ git clone https://github.com/gulceselim/re-cap-project-with-csharp.git
-
-# Go to the folder you cloned
-$ cd re-cap-project-with-csharp
-
-# Install dependencies
-$ dotnet restore
-```
 
 ## Usage 
 Aşağıda görmüş olduğunuz resimdeki işlemi gerçekleştirdikten sonra Ctrl+F5 ile uygulamayı çalıştırabilirsiniz.
@@ -287,5 +270,3 @@ ImagePath | nvarchar(MAX)
 
 
 
-## License
-[MIT © Selim Gülce](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/LICENSE.txt)  
