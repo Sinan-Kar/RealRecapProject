@@ -3,6 +3,7 @@
 
 <h1 align="center">ReCap Project : Araba Kiralama Sistemi</h1> 
 
+![Image for Usage]
 ## ⭐ Introduction 
 - **Entities, DataAccess, Business ve Console katmanlarından oluşan araba kiralama console projesidir. Car, Brand, Color, Customer, User, CarImages ve Rental nesnelerinden ve onun operasyonlarından oluşan bu proje zamanla geliştirilecektir.**
 - **[Sql query](https://github.com/Sinan-Kar/RealRecapProject/blob/master/RentACarSQLQuery.sql) dosyamı da ekledim isteyen varsa faydalanabilir.**
