@@ -42,8 +42,8 @@ Aşağıda görmüş olduğunuz resimdeki işlemi gerçekleştirdikten sonra Ctr
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [User.cs](https://github.com/Sinan-Kar/RealRecapProject/blob/master/Entities/Concrete/User.cs) <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;📂 ``DTOs`` <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [CarDetailDto.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/DTOs/CarDetailDto.cs) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [RentalDetailDto.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/DTOs/RentalDetailDto.cs) <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [CarDetailDto.cs](https://github.com/Sinan-Kar/RealRecapProject/blob/master/Entities/DTOs/CarDetailDto.cs) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [RentalDetailDto.cs](https://github.com/Sinan-Kar/RealRecapProject/blob/master/Entities/DTOs/RentalDetailDto.cs) <br><br>
 
 🗃 **``Business Layer``** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📂 ``Abstract`` <br>
