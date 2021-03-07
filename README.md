@@ -73,12 +73,12 @@ Aşağıda görmüş olduğunuz resimdeki işlemi gerçekleştirdikten sonra Ctr
 
 &nbsp;&nbsp;&nbsp;&nbsp; 📂 ``ValidationRules`` <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📂 ``FluentValidation`` <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [BrandValidator.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/ValidationRules/FluentValidation/BrandValidator.cs) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [CarValidator.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/ValidationRules/FluentValidation/CarValidator.cs) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [ColorValidator.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/ValidationRules/FluentValidation/ColorValidator.cs) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [CustomerValidator.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/ValidationRules/FluentValidation/CustomerValidator.cs) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [RentalValidator.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/ValidationRules/FluentValidation/RentalValidator.cs) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [UserValidator.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/ValidationRules/FluentValidation/UserValidator.cs) <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [BrandValidator.cs](https://github.com/Sinan-Kar/RealRecapProject/blob/master/Business/ValidationRules/FluentValidation/BrandValidator.cs) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [CarValidator.cs](https://github.com/Sinan-Kar/RealRecapProject/blob/master/Business/ValidationRules/FluentValidation/CarValidator.cs) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [ColorValidator.cs](https://github.com/Sinan-Kar/RealRecapProject/blob/master/Business/ValidationRules/FluentValidation/ColorValidator.cs) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [CustomerValidator.cs](https://github.com/Sinan-Kar/RealRecapProject/blob/master/Business/ValidationRules/FluentValidation/CustomerValidator.cs) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [RentalValidator.cs](https://github.com/Sinan-Kar/RealRecapProject/blob/master/Business/ValidationRules/FluentValidation/RentalValidator.cs) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [UserValidator.cs](https://github.com/Sinan-Kar/RealRecapProject/blob/master/Business/ValidationRules/FluentValidation/UserValidator.cs) <br><br>
 
 
 🗃 **``Data Access Layer``** <br>
