@@ -17,14 +17,13 @@
 
 ## Table of Contents
 - [Recent Changes](#recent-changes)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Layers](#layers)
 - [SQL Query](#sql-query)
 - [Tables in Database](#tables-in-database)
 - [Output](#output)
 - [Files](#files)
-- [License](#license)
+
 
 ## Usage 
 Aşağıda görmüş olduğunuz resimdeki işlemi gerçekleştirdikten sonra Ctrl+F5 ile uygulamayı çalıştırabilirsiniz.
@@ -269,7 +268,7 @@ ImagePath | nvarchar(MAX)
 <img src="https://user-images.githubusercontent.com/43720773/108479681-10174f00-72a7-11eb-8140-8b98e38dc077.jpg"></img>
 
 
-## :pencil2:Authors
+#### :pencil2:Authors
 * **Sinan Kara** - [Sinan Kara](https://github.com/Sinan-Kar)
 */
  
