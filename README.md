@@ -1,12 +1,11 @@
-[![GitHub License](https://img.shields.io/github/license/gulceselim/re-cap-project-with-csharp?color=green)](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/LICENSE.txt)
-
-![GitHub repo size](https://img.shields.io/github/repo-size/gulceselim/re-cap-project-with-csharp)
+[![GitHub License](https://img.shields.io/github/license/Sinan-Kar/re-cap-project-with-csharp?color=green)](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/LICENSE.txt)
+![GitHub repo size](https://img.shields.io/github/repo-size/Sinan-Kar/re-cap-project-with-csharp)
 
 <h1 align="center">ReCap Project : Araba Kiralama Sistemi</h1> 
 
 ## ⭐ Introduction 
 - **Entities, DataAccess, Business ve Console katmanlarından oluşan araba kiralama console projesidir. Car, Brand, Color, Customer, User, CarImages ve Rental nesnelerinden ve onun operasyonlarından oluşan bu proje zamanla geliştirilecektir.**
-- **[Sql query](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql) dosyamı da ekledim isteyen varsa faydalanabilir.**
+- **[Sql query](https://github.com/Sinan-Kar/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql) dosyamı da ekledim isteyen varsa faydalanabilir.**
 
 
 ## Recent Changes
@@ -34,13 +33,13 @@ Aşağıda görmüş olduğunuz resimdeki işlemi gerçekleştirdikten sonra Ctr
 ## Layers
 🗃 **``Entities Layer``** <br>
 &nbsp;&nbsp;&nbsp;&nbsp;📂 ``Concrete`` <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [Brand.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/Concrete/Brand.cs) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [Car.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/Concrete/Car.cs) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [CarImage.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/Concrete/CarImage.cs) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [Color.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/Concrete/Color.cs) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [Customer.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/Concrete/Customer.cs) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [Rental.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/Concrete/Rental.cs) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [User.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/Concrete/User.cs) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [Brand.cs](https://github.com/Sinan-Kar/re-cap-project-with-csharp/blob/main/Entities/Concrete/Brand.cs) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [Car.cs](https://github.com/Sinan-Kar/re-cap-project-with-csharp/blob/main/Entities/Concrete/Car.cs) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [CarImage.cs](https://github.com/Sinan-Kar/re-cap-project-with-csharp/blob/main/Entities/Concrete/CarImage.cs) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [Color.cs](https://github.com/Sinan-Kar/re-cap-project-with-csharp/blob/main/Entities/Concrete/Color.cs) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [Customer.cs](https://github.com/Sinan-Kar/re-cap-project-with-csharp/blob/main/Entities/Concrete/Customer.cs) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [Rental.cs](https://github.com/Sinan-Kar/re-cap-project-with-csharp/blob/main/Entities/Concrete/Rental.cs) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [User.cs](https://github.com/Sinan-Kar/re-cap-project-with-csharp/blob/main/Entities/Concrete/User.cs) <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;📂 ``DTOs`` <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [CarDetailDto.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/DTOs/CarDetailDto.cs) <br>
