@@ -1,11 +1,11 @@
-[![GitHub License](https://img.shields.io/github/license/Sinan-Kar/re-cap-project-with-csharp?color=green)](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/LICENSE.txt)
-![GitHub repo size](https://img.shields.io/github/repo-size/Sinan-Kar/re-cap-project-with-csharp)
+[![GitHub License](https://img.shields.io/github/license/Sinan-Kar/RealRecapProject?color=green)](https://github.com/Sinan-Kar/RealRecapProject/blob/master/LICENSE.txt)
+![GitHub repo size](https://img.shields.io/github/repo-size/Sinan-Kar/RealRecapProject)
 
 <h1 align="center">ReCap Project : Araba Kiralama Sistemi</h1> 
 
 ## ⭐ Introduction 
 - **Entities, DataAccess, Business ve Console katmanlarından oluşan araba kiralama console projesidir. Car, Brand, Color, Customer, User, CarImages ve Rental nesnelerinden ve onun operasyonlarından oluşan bu proje zamanla geliştirilecektir.**
-- **[Sql query](https://github.com/Sinan-Kar/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql) dosyamı da ekledim isteyen varsa faydalanabilir.**
+- **[Sql query](https://github.com/Sinan-Kar/RealRecapProject/blob/master/RentACarSQLQuery.sql) dosyamı da ekledim isteyen varsa faydalanabilir.**
 
 
 ## Recent Changes
