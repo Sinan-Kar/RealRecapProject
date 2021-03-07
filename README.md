@@ -1,5 +1,5 @@
 [![GitHub License](https://img.shields.io/github/license/gulceselim/re-cap-project-with-csharp?color=green)](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/LICENSE.txt)
-![GitHub Repo stars](https://img.shields.io/github/stars/gulceselim/re-cap-project-with-csharp?color=yellow)
+
 ![GitHub repo size](https://img.shields.io/github/repo-size/gulceselim/re-cap-project-with-csharp)
 
 <h1 align="center">ReCap Project : Araba Kiralama Sistemi</h1> 
@@ -269,4 +269,7 @@ ImagePath | nvarchar(MAX)
 <img src="https://user-images.githubusercontent.com/43720773/108479681-10174f00-72a7-11eb-8140-8b98e38dc077.jpg"></img>
 
 
-
+## :pencil2:Authors
+* **Sinan Kara** - [Sinan Kara](https://github.com/Sinan-Kar)
+*/
+ 
