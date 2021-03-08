@@ -10,7 +10,7 @@
 
 
 ## Recent Changes
-✔ AOP yaklaşımında CastleDynamicProxy kullanıldı.
+✔ AOP yaklaşımında CastleDynamicProxy kullanıldı.Bir IoC Container olan Autofac’ten yararlanıldı.<br>
 ✔ Caching, Transaction ve Performance aspectleri eklendi. <br>
 ✔ CarManager class'ına ait olan GetAll metoduna Logging aspect'i eklendi. <br>
 ✔ Car nesnesinin GetAll metodu performance ile test edildi. <br>
