@@ -5,7 +5,7 @@
 
 ![Image for Usage](https://github.com/Sinan-Kar/RealRecapProject/blob/master/Entities/images/recap.png)
 ## ⭐ Introduction 
-- **Entities, DataAccess, Business ve Console katmanlarından oluşan araba kiralama console projesidir. Car, Brand, Color, Customer, User, CarImages ve Rental nesnelerinden ve onun operasyonlarından oluşan bu proje zamanla geliştirilecektir.**
+- **Entities, DataAccess, Business ve Console katmanlarından oluşan araba kiralama console projesidir. Car, Brand, Color, Customer, User, CarImages ve Rental nesnelerinden ve onun operasyonlarından oluşur.**
 - **[Sql query](https://github.com/Sinan-Kar/RealRecapProject/blob/master/RentACarSQLQuery.sql) dosyamı da ekledim isteyen varsa faydalanabilir.**
 
 
