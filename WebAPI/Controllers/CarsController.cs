@@ -1,4 +1,4 @@
-﻿using Business.Abstract;
+using Business.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;
 using Microsoft.AspNetCore.Http;
@@ -80,6 +80,8 @@ namespace WebAPI.Controllers
         [HttpGet("getallcardetails")]
         public IActionResult GetAllCarDetails()
         {
+        	Thread.Sleep(5000);
+        	
             var result = _carService.GetCarDetails();
             if (result.Success)
             {
