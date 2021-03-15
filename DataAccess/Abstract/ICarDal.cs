@@ -1,4 +1,4 @@
-﻿using Core.DataAccess;
+using Core.DataAccess;
 using Entities.Concrete;
 using Entities.DTOs;
 using System;
@@ -12,6 +12,6 @@ namespace DataAccess.Abstract
     {
 
         List<CarDetailDto> GetCarDetails(Expression<Func<Car,bool>> filter = null);
-
+        CarDetailDto GetCarDetail(int carId);
     }
 }

@@ -1,4 +1,4 @@
-﻿using Core.Utilities.Results;
+using Core.Utilities.Results;
 using Entities.Concrete;
 using Entities.DTOs;
 using System;
@@ -16,6 +16,7 @@ namespace Business.Abstract
         IDataResult<List<Car>> GetAll();
         IDataResult<Car> GetById(int id);
         IDataResult<List<CarDetailDto>> GetCarDetails(Expression<Func<Car,bool>> filter = null);
+        IDataResult<CarDetailAndImagesDto> GetCarDetailAndImagesDto(int carId);
 
         IResult TransactionalOperation(Car car);
     }

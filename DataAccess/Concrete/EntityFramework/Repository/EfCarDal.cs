@@ -1,4 +1,4 @@
-﻿using Core.DataAccess.EntityFramework;
+using Core.DataAccess.EntityFramework;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework.Context;
 using Entities.Concrete;
@@ -37,6 +37,28 @@ namespace DataAccess.Concrete.EntityFramework.Repository
                                  ImagePath = ci.ImagePath
                              };
                 return result.ToList();
+            }
+        }
+        
+        CarDetailDto GetCarDetail(int carId)
+        {
+            using (RentACarContext context = new RentACarContext())
+            {
+                var result = from p in context.Cars.Where(p => p.Id == carId)
+                             join c in context.Colors
+                             on p.ColorId equals c.Id
+                             join d in context.Brands
+                             on p.BrandId equals d.Id
+                             select new CarDetailDto
+                             {
+                                 BrandName = d.BrandName,
+                                 ColorName = c.ColorName,
+                                 DailyPrice = p.DailyPrice,
+                                 Description = p.Description,
+                                 ModelYear = p.ModelYear,
+                                 CarId = p.Id
+                             };
+                return result.SingleOrDefault();
             }
         }
     }

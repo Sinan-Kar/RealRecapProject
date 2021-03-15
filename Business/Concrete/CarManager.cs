@@ -1,4 +1,4 @@
-﻿using Business.Abstract;
+using Business.Abstract;
 using Business.BusinessAspect.Autofac;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
@@ -61,6 +61,25 @@ namespace Business.Concrete
         {
             return new SuccessDataResult<Car>(_carDal.Get(c => c.Id == id));
         }
+        
+        public IDataResult<CarDetailAndImagesDto> GetCarDetailAndImagesDto(int carId)
+        {
+            var result = _carDal.GetCarDetail(carId);
+            var imageResult = _carImageService.GetAllByCarId(carId);
+            if (result == null || imageResult.Success == false)
+            {
+                return new ErrorDataResult<CarDetailAndImagesDto>(Messages.GetErrorCarMessage);
+            }
+
+            var carDetailAndImagesDto = new CarDetailAndImagesDto
+            {
+               Car=result,
+               CarImages=imageResult.Data
+            };
+
+            return new SuccessDataResult<CarDetailAndImagesDto>(carDetailAndImagesDto, Messages.GetSuccessCarMessage);
+        }
+
 
         [CacheAspect]
         public IDataResult<List<CarDetailDto>> GetCarDetails(Expression<Func<Car,bool>> filter = null)
