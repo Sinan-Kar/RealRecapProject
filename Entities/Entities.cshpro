@@ -4,3 +4,11 @@
 //+src=Concrete/Color.cs
 //+src=Concrete/Customer.cs
 //+src=Concrete/Rental.cs
+//+src=Concrete/Findeks.cs
+//+src=DTOs/CarDetailAndImagesDto.cs
+//+src=DTOs/CarDetailDto.cs
+//+src=DTOs/RentalDetailDto.cs
+//+src=DTOs/UserForLoginDto.cs
+//+src=DTOs/UserForRegisterDto.cs
+//+src=DTOs/RentalPaymentDto.cs
+//+src=DTOs/UserForUpdateDto.cs

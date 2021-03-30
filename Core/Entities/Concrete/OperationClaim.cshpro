@@ -1,0 +1,3 @@
+//+src=Fake/IPaymentModel.cs
+//+src=Fake/FakeCreditCartModel.cs
+//+src=User.cs
