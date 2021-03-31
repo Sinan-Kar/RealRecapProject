@@ -1,4 +1,4 @@
-﻿using Core.Utilities.Results;
+using Core.Utilities.Results;
 using Entities.Concrete;
 using Entities.DTOs;
 using System;
@@ -16,6 +16,7 @@ namespace Business.Abstract
         IDataResult<List<Rental>> GetAll();
         IDataResult<Rental> GetById(int id);
 
-        IDataResult<List<RentalDetailDto>> GetRentalDetails(Expression<Func<Rental, bool>> filter = null);
+        IDataResult<List<RentalDetailDto>>GetRentalDetailsById(int id);
+        IDataResult<List<RentalDetailDto>> GetRentalDetails();
     }
 }

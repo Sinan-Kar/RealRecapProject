@@ -4,7 +4,6 @@ using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Text;
 
 namespace Business.Abstract
 {
@@ -13,11 +12,12 @@ namespace Business.Abstract
         IResult Add(Car car);
         IResult Update(Car car);
         IResult Delete(Car car);
+        IDataResult<Car> GetById(int carId);
         IDataResult<List<Car>> GetAll();
-        IDataResult<Car> GetById(int id);
-        IDataResult<List<CarDetailDto>> GetCarDetails(Expression<Func<Car,bool>> filter = null);
-        IDataResult<CarDetailAndImagesDto> GetCarDetailAndImagesDto(int carId);
-
-        IResult TransactionalOperation(Car car);
+        IDataResult<List<CarDetailDto>> GetCarDetails(Expression<Func<Car, bool>> filter = null);
+        IDataResult<List<CarDetailDto>> GetCarDetailsById(int carId);
+        IDataResult<List<CarDetailDto>> GetCarsDetailByBrandId(int brandId);
+        IDataResult<List<CarDetailDto>> GetCarsDetailByColorId(int colorId);
+        IDataResult<List<CarDetailDto>> GetCarDetailsByBrandAndColor(int brandId, int colorId);
     }
 }

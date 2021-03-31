@@ -1,60 +1,112 @@
-﻿using Business.Abstract;
+using Business.Abstract;
 using Business.Constants;
-using Core.Entities.Concrete;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using Business.BusinessAspects.Autofac;
+using Core.Aspects.Autofac.Caching;
+using Core.Aspects.Autofac.Performance;
+using Core.Entities.Concrete;
+using Core.Utilities.Security.Hashing;
+using Entities.Concrete;
 
 namespace Business.Concrete
 {
     public class UserManager : IUserService
     {
-        IUserDal _userDal;
+        private readonly IUserDal _userDal;
 
         public UserManager(IUserDal userDal)
         {
             _userDal = userDal;
         }
 
+        [ValidationAspect(typeof(UserValidator))]
+        [CacheRemoveAspect("IUserService.Get")]
         public IResult Add(User user)
         {
             _userDal.Add(user);
-            return new SuccessResult(Messages.AddedColor);
+            return new SuccessResult(Messages.UserAdded);
         }
 
+        public IResult ProfileUpdate(User user,string password)
+        {
+            byte[] passwordHash, passwordSalt;
+            HashingHelper.CreatePasswordHash(password, out passwordHash, out passwordSalt);
+            var updatedUser = new User
+            {
+                Id = user.Id,
+                Email = user.Email,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                PasswordHash = passwordHash,
+                PasswordSalt = passwordSalt,
+                Status = user.Status
+            };
+            _userDal.Update(updatedUser);
+            return new SuccessDataResult<User>(Messages.UserUpdated);
+        }
+
+        [SecuredOperation("User.Delete")]
         public IResult Delete(User user)
         {
             _userDal.Delete(user);
-            return new SuccessResult(Messages.DeletedColor);
+            return new SuccessResult(Messages.UserDeleted);
         }
 
+        [CacheAspect]
         public IDataResult<List<User>> GetAll()
         {
-            return new SuccessDataResult<List<User>>(_userDal.GetAll());
+            if (DateTime.Now.Hour == 00)
+            {
+                return new ErrorDataResult<List<User>>(Messages.MaintenanceTime);
+            }
+            return new SuccessDataResult<List<User>>(_userDal.GetAll(), Messages.UserListed);
         }
 
+        [CacheAspect]
+        [PerformanceAspect(5)]
         public IDataResult<User> GetById(int id)
         {
-            return new SuccessDataResult<User>(_userDal.Get(I => I.Id == id));
+            if (DateTime.Now.Hour == 00)
+            {
+                return new ErrorDataResult<User>(Messages.MaintenanceTime);
+            }
+            return new SuccessDataResult<User>(_userDal.Get(b => b.Id == id));
         }
 
-        public User GetByMail(string email)
+        public IDataResult<Findeks> GetUserFindeks(Findeks findeks)
         {
-            return _userDal.Get(u => u.Email == email);
-        }
-
-        public List<OperationClaim> GetClaims(User user)
-        {
-            return _userDal.GetClaims(user);
+            Random rnd = new Random();
+            var userFindeks = new Findeks
+            {
+                Tc = findeks.Tc,
+                DateYear = findeks.DateYear,
+                UserFindeks = rnd.Next(0,1900)
+            };
+            return new SuccessDataResult<Findeks>(userFindeks);
         }
 
         public IResult Update(User user)
         {
             _userDal.Update(user);
-            return new SuccessResult(Messages.UpdatedColor);
+            return new SuccessResult(Messages.UserUpdated);
         }
 
+        [CacheAspect]
+        public IDataResult<List<OperationClaim>> GetClaims(User user)
+        {
+            return new SuccessDataResult<List<OperationClaim>>(_userDal.GetClaims(user));
+        }
+
+        [CacheAspect]
+        [PerformanceAspect(5)]
+        public IDataResult<User> GetByMail(string email)
+        {
+            return new SuccessDataResult<User>(_userDal.Get(u => u.Email == email));
+        }
     }
 }
